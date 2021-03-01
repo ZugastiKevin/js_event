@@ -28,12 +28,22 @@ clicButton.addEventListener("click", function () {
 editCard = document.querySelectorAll(".btn-outline-secondary")[0];
 onRed = document.querySelectorAll(".card-text")[0];
 editCard.addEventListener("click", function() {
-  onRed.style.color = "red"
+  onRed.style.color = "red" ;
 })
 
 // Exercice 4
 
 editCardTwo = document.querySelectorAll(".btn-outline-secondary")[1];
+onGreen = document.querySelectorAll(".card-text")[1];
+editCardTwo.addEventListener("click", function() {
+	if( onGreen.style.color === 'green') {
+		onGreen.style.color = ' ' ;
+	} else {
+		onGreen.style.color = "green" ;
+	}
+})
+
+/*editCardTwo = document.querySelectorAll(".btn-outline-secondary")[1];
 onGreen = document.querySelectorAll(".card-text")[1];
 color = 1
 editCardTwo.addEventListener("click", function() {
@@ -43,7 +53,7 @@ editCardTwo.addEventListener("click", function() {
 	} else {
 		onGreen.style.color = "rgb(33, 37, 41)"
 	}
-})
+})*/
 
 // Exercice 5
 
